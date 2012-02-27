@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+
+/* ########################################################## */
+/* ### A Simple Table View for Lots of Results            ### */
+/* ########################################################## */
+
+#data_table {
+	width: 100%;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	}
+
+#data_table th, #data_table td {
+	padding: 0.3em;
+	text-align: left;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	}
+
+#data_table th { /*header row*/
+	background-image: url('img/gradients/th.png');
+	background-repeat: repeat-x;
+	background-color: #416f9e;
+	color: white;
+	}
+
+#data_table tr.o { /* odd rows */
+	background: white;
+	}
+
+#data_table tr.e { /* even rows  */
+	background: #eaeaf2;
+	}
+
+#data_table tr:hover {
+	background-image: url('img/gradients/rowh.png');
+	background-repeat: repeat-x;
+	background-color: #fff1c8;
+	}
+
+#data_table th.thumb, #data_table td.thumb {
+	padding: 0;
+	margin: 0;
+	width: 24px;
+	}
+
+
+/* ########################################################## */
+/* ### Business-card-like DIVs                            ### */
+/* ########################################################## */
+
+.ContactCard {
+	display: block;
+	position: relative;
+	float: left;
+	width: 340px;
+	height: 174px;
+	margin: 8px;
+	border: 1px solid black;
+	overflow: hidden;
+	white-space: normal;
+	cursor: pointer;
+	}
+
+.ContactCard img {
+	position: absolute;
+	left: 5px;
+	top: 2em;
+	margin: 0;
+	padding: 0;
+	margin-top: -3px;
+	}
+
+.ContactCard .Name {
+	position: absolute;
+	padding: 3px;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: url('img/gradients/card.png');
+	background-repeat: repeat-x;
+	background-color: #f1f1f1;
+	color: black;
+	border-bottom: 1px solid black;
+	}
+.ContactCard:hover .Name {
+	background-image: url('img/gradients/cardh.png');
+	}
+
+.ContactCard .ContactInfo {
+	position: absolute;
+	left: 118px;
+	top: 2.3em;
+	bottom: 5px;
+	margin: 0;
+	padding: 0;
+	font-size: 80%;
+	white-space: normal;
+	overflow: auto;
+	overflow-x: hidden;
+	width: 217px;
+	}
+
+.ContactCard .ContactInfo p {
+	margin: 0;
+	margin-bottom: 0.6em;
+	}
+
+.ContactCard .ContactInfo > p:first-child {
+	margin-left: -3px;
+	padding: 2px;
+	padding-left: 5px;
+	padding-top: 0;
+	border-bottom: 1px solid #ccc;
+	border-left: 6px solid #ccc;
+	margin-bottom: 0.4em;
+	}
+
+.ContactCard .FullName {
+	font-size: 100%;
+	font-weight: bold;
+	}
+
+.ContactCard .Class {
+	position: absolute;
+	right: 5px;
+	font-size: 80%;
+	}
+
+.ContactCard .ContactInfo h1,
+.ContactCard .ContactInfo h2,
+.ContactCard .ContactInfo h3,
+.ContactCard .ContactInfo h4,
+.ContactCard .ContactInfo h5 {
+	margin: 0;
+	}
+
+
+/* ContactCard detailed view */
+.Detailed.ContactCard {
+	width: 520px;
+	height: 314px;
+	cursor: default;
+	}
+.Detailed.ContactCard:hover .Name {
+	background-image: url('img/gradients/card.png');
+	}
+
+.Detailed.ContactCard .ContactInfo {
+	left: 223px;
+	width: 292px;
+	}
+
+.Detailed.ContactCard .Section {
+	padding-left: 44px;
+	min-height: 32px;
+	margin-bottom: 8px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #ccc;
+	}
+
+.Detailed.ContactCard .Section.Room {
+	min-height: 50px;
+	background-image: url('img/details/building.png');
+	}
+
+.Detailed.ContactCard .Section.Phone {
+	min-height: 50px;
+	background-image: url('img/details/phone.png');
+	}
+
+.Detailed.ContactCard .Section.IM {
+	min-height: 50px;
+	background-image: url('img/details/IM.png');
+	}
+
+.Detailed.ContactCard .Section.Mail {
+	min-height: 50px;
+	background-image: url('img/details/snail.png');
+	}
+
+.LinkThisSearch {
+	font-size: 65%;
+	color: #999;
+	}

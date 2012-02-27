@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+.Hidden {
+	display: none;
+	}
+
+.Invisible {
+	visibility: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	text-transform: lowercase;
+}
+
+ol.Steps li {
+	margin-top: 0.75em;
+}
+
+div.Container {
+	padding: 0;
+	margin: 0;
+	}
+div.Container div.Half,
+div.Container div.Third {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+	}
+
+div.Container div.Half{
+	width: 50%;
+	}
+div.Container div.Left.Half {
+	float: Left;
+	}
+div.Container div.Right.Half {
+	float: Right;
+	}
+
+div.Container div.Third{
+	width: 33%;
+	}
+div.Container div.Left.Third{
+	float: Left;
+	}
+div.Container div.Center.Third{
+	float: Left;
+	width: 34%;
+	}
+div.Container div.Right.Third{
+	float: Right;
+	}
+
+.Reminder {
+	color: #666;
+	font-style: italic;
+	font-size: 90%;
+	}
+
+.FloatLeft,
+.FloatRight {
+	display: float;
+	}
+.FloatLeft{ float: left; }
+.FloatRight{ float: right; }
+.FloatCenter{
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+
+.Error, .Welcome, .Info, .Warning {
+	padding: 1em;
+	font-size: 90%;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.Error {
+	border: 1px solid #900;
+	background: #d44;
+	color: white;
+	}
+
+.Error a {
+	color: #ff9;
+	text-decoration: none;
+	border-bottom: 1px dotted #ff9;
+	}
+
+.Info {
+	border: 1px solid #999;
+	background: #ddd;
+	}
+
+.Warning {
+	border: 1px solid #aa0;
+	background: #ffb;
+	}
+
+.Welcome {
+	border: 1px solid #090;
+	background: #cfc;
+	}
+
+.Hideable {
+	cursor: pointer;
+	}
+
+.Wrapped {
+	max-width: 50em;
+	}
+
+tt, pre, code {
+	font-family: 'Consolas', 'Lucida Console', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
+}
+
+tr:first-child td:first-child,
+tr:first-child th:first-child {
+	-moz-border-radius-topleft: 0.333em;
+	border-top-left-radius: 0.333em;
+}
+
+tr:first-child td:last-child,
+tr:first-child th:last-child {
+	-moz-border-radius-topright: 0.333em;
+	border-top-right-radius: 0.333em;
+}
+
+tr:last-child td:first-child,
+tr:last-child th:first-child {
+	-moz-border-radius-bottomleft: 0.333em;
+	border-bottom-left-radius: 0.333em;
+}
+
+tr:last-child td:last-child,
+tr:last-child th:last-child {
+	-moz-border-radius-bottomright: 0.333em;
+	border-bottom-right-radius: 0.333em;
+}
+
+
+
+
+pre.Output {
+	font-size: 0.9em;
+	background: whiteSmoke;
+	border: 1px solid #ddd;
+	-moz-border-radius: 0.333em;
+	border-radius: 0.333em;
+	padding: 1em;
+	margin-left: 0.5em;
+	overflow: auto;
+	margin-right: 1em;
+	height: auto;
+	max-width: 65em;
+	color: black;
+}
+
+/* for alternating line colors */
+pre.Output.Colorized {
+	max-height: 23em;
+}
+pre.Output.Colorized > span {
+	display: block;
+	clear: both;
+	border-top: 1px solid #e8e8e8;
+	padding: 0.2em 0;
+	width: 100%
+}
+
+pre.Output.Colorized > span.Odd {
+	background: #fdfdfd;
+}
+
+pre.Output.Colorized > span:hover,
+.Query:hover {
+	background: #fff3cf;
+}
+
+
+/* for doing indentation with lovely little lines showing indentation level */
+pre.Output span.ND {
+	width: 1.8em;
+	overflow: hidden;
+	display: inline-block;
+	border-left: 1px dotted #ccc; 
+	margin-left: 0.25em;
+	background: none;
+}
+
+.Query {
+	margin: 0 0.4em;
+	display: inline-block;
+	background: #f8f8f8;
+	border: 1px solid #e9e9e9;
+	padding: 0.15em 0.3em;
+	font-size: 0.9em;
+	-moz-border-radius: 0.25em;
+	border-radius: 0.25em;
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	text-decoration: none;
+}
+
+section {
+	display: block;
+}

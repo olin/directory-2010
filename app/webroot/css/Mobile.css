@@ -1,0 +1,254 @@
+/** mobile.css */
+/* mobile device sim, remove in final */
+html.Mobile {
+	background: black;
+	overflow: none;
+}
+html.Mobile body {
+	display: block;
+	width: 240px;
+	height: 320px;
+	margin: 20px auto;
+	overflow-y: auto;
+}
+html.Mobile.Landscape body {
+	width: 320px;
+	height: 240px;
+}
+
+/* kill all CSS transitions */
+.ContactCard,
+.ContactCard img.Profile,
+.ContactCard .Name,
+.ContactCard:hover .Name,
+.Large.ContactCard .Name,
+.ContactCard .ContactInfo,
+.DetailsView .LightboxCloser
+{
+	-webkit-transition: all 0s linear;
+	-moz-transition: all 0s linear;
+	transition: all 0s linear;
+}
+
+/* tighten up content section */
+.Content.Section {
+	padding: 0;
+	min-height: 0;
+	background: none;
+	border: none;
+}
+
+/* searchbar mods */
+#SearchBar {
+	border-top: 1px solid black;
+}
+#SearchBar td {
+	padding: 0;
+	margin: 0;
+}
+#SearchBar input#searchBox {
+	font-size: 1em;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 0.5em;
+	height: 2.6em;
+	margin: 0;
+	border: none;
+	width: 100%;
+	background: white; /*#39576a;*/
+	color: #666;
+}
+#SearchBar input#searchBox:focus {
+	background: white;
+	color: black;
+}
+#SearchBar table {
+	margin: 0;
+}
+.SearchButton {
+	display: inline-block;
+	float: right;
+	border: none;
+	width: 4em;
+	height: 2.6em;
+	padding: 0;
+	margin: 0;
+	background: url(../img/search/inactive.png) center center no-repeat;
+	background-color: #39576a;
+	vertical-align: center;
+	cursor: pointer;
+}
+.SearchButton:hover,
+.SearchButton:focus {
+	background-image: url(../img/search/active.png);
+	background-color: #39576a;
+}
+.SearchButton.Working {
+	background-image: url(../img/search/working.gif);
+	background-color: #2a6e36;
+}
+
+
+/* results mods */
+#searchResults {
+	margin:0;
+	padding:0;
+}
+
+/* footer smaller, dif. color */
+html, body {
+	background: #222;
+} 
+.Footer {
+	padding: 0.5em;
+	min-height: 5.3em;
+	background: none;
+	color: #666;
+	font-size: 0.75em;
+}
+.Footer p {
+	line-height: 1.5em;
+}
+
+/* contact cards */
+.ContactCard.Template {
+	display: none;
+}
+
+.ContactCard {
+	display: block;
+	margin: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	border-top: 1px solid black;
+	width: 100%;
+	height: auto;
+	min-height: 6em;
+	background: #262d33;
+	cursor: default;
+}
+
+.ContactCard .Name {
+	left: 0;
+	font-size: 1.05em;
+	height: 2.5em;
+	border-bottom: none;
+	background-color: #444;
+		background-image: -webkit-gradient(
+		linear,left top,left bottom,
+		from(rgba(0,0,0,0.0)),
+		to(rgba(0,0,0,.15))
+	);
+	cursor: pointer;
+}
+
+.ContactCard:hover .Name {
+	background-color: #444;
+	color: white;
+}
+
+.ContactCard.Expanded .Name,
+.ContactCard.Expanded:hover .Name {
+	background-color: #4a6987; /**#4875a0;*/
+	color: white;
+}
+
+.ContactCard .FullName {
+	top: 0.7em;
+}
+
+.ContactCard .Name .Class {
+	top: 0.9em;
+}
+
+.ContactCard.Message {
+	cursor: default;
+}
+.ContactCard.Message .Name {
+	background-color: #333;
+	color: #999;
+	font-size: 0.8em;
+	height: 1.8em;
+	border-bottom: 1px solid black;
+	cursor: default;
+}
+.ContactCard.Message .FullName {
+	top: 0.2em;
+}
+
+
+.ContactCard .ContactInfo {
+	/*left: 45px;*/
+	left: 0;
+	right: 0;
+	width: auto;
+	top: 1.7em;
+	bottom: 0;
+	border: 0;
+	padding: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	margin: 0;
+}
+
+.ContactCard .ContactInfo p {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+/** actions inside a card for the userinfo */
+.ContactCard .UserAction {
+	display: inline-block;
+	position: relative;
+	min-width: 4em;
+	margin: 0.5em 0 0.5em 0.25em;
+	padding: 5px;
+	text-align: center;
+	color: white;
+}
+
+.ContactCard .UserAction span,
+.ContactCard .UserAction img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ContactCard .UserAction span {
+	text-align: left;
+	line-height:1.2em;
+}
+
+.ContactCard {
+	min-height: 0;
+	margin: 0;
+}
+.ContactCard .Name {
+	display: block;
+	position: relative;
+	margin: 0;
+}
+.ContactCard .ContactInfo {
+	display: block;
+	position: relative;
+	top: 0;
+	background-image: -webkit-gradient(
+		linear,left top,left bottom,
+		color-stop(0.00, rgba(0,0,0,0.3)),
+		color-stop(0.50, rgba(0,0,0,0.0)),
+		color-stop(0.67, rgba(0,0,0,0.0)),
+		color-stop(1.00, rgba(0,0,0,0.15))
+	);
+}

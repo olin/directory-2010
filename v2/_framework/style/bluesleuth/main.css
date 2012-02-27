@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("standard.css");
+@import url("compactforms.css");
+@import url("views.css");
+@import url("navigation.css");
+
+body {
+	background-color: white;
+	background-repeat: repeat-x;
+	color: black;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	padding: 0;
+	}
+
+#content {
+	position: relative;
+	margin: 1em;
+	margin-top: 2.5em;
+	padding: 0;
+	}
+
+.Hint,
+.Hint a {
+	font-size: 90%;
+	color: #37a;
+	margin-bottom: 0.5em;
+	}
+
+.Hint a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	}

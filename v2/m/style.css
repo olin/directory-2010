@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #fff;
+	-webkit-text-size-adjust: none;
+}
+
+.Header {
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	background-image: url('gradient.png');
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+.Header a,
+.Header img {
+	text-decoration: none;
+	border: none;
+}
+
+.FullWidth {
+	width: 95%;
+}
+
+
+.Contents, .Result {
+	margin: 4px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+form {
+	margin-top: 5px;
+}
+
+input {
+	padding: 5px;
+}
+
+.Result,
+.Search {
+	border-top: 1px solid #999;
+	padding: 4px;
+}
+
+.Result.Last {
+	background: none;
+}
+
+.Search {
+	border: none;
+	background: #cfc;
+	margin-bottom: 0;
+	padding: 8px;
+}
+.Search.Warning {
+	background: #ff9;
+}
+.Search.Error {
+	background: #faa;
+}
+
+.Result h3 {
+	display: inline-block;
+	margin: 0;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	padding: 0;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.Result em {
+	font-size: 90%;
+}

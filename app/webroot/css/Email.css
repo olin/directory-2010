@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+html, body {
+	margin: 0;
+	padding: none;
+	width: 100%;
+	background: #ccc;
+	font-size: 11pt;
+}
+
+html, body, input, select, button {
+	color: #333;
+	font-family: "Quicksand", "Century Gothic", Verdana, Tahoma, Geneva, sans-serif;
+}
+
+.Wrapper {
+	margin: 1em auto;
+	max-width: 640px;
+	background: white;
+	padding: 0;
+	border: 1px solid #999;
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+}
+
+td {
+	padding: 0.5em 1em;
+	margin: 0;
+}
+
+h2 {
+	text-transform: lowercase;
+}
+
+td h2 {
+	margin: 0;
+	padding: 0;
+}
+
+tr.Header td {
+	border-bottom: 1px solid #aaa;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+tr.Footer td {
+	font-size: 80%;
+	font-style: italic;
+	color: #ddd;
+	background: #777;
+	padding: 1em;
+}
+
+tr.Footer a {
+	color: #fff;
+	font-style: normal;
+}
+
+tr.Footer p {
+	margin: 0;
+}
+
+.Quoted {
+	margin: 1em;
+	background: #eee;
+	padding: 1em;
+	border: 1px solid #999;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+}

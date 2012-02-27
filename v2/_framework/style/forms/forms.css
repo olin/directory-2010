@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+form.Formatted .Labeled {
+	margin-left: 22px;
+	margin-right: 5px;
+	}
+
+form.Formatted div {
+	padding: 0.2em 0 0.2em 0;
+	}
+
+form.Formatted h3 {
+	margin-top: 1.2em;
+	padding-top: 0.3em;
+	margin-bottom: 0.4em;
+	border-top: 1px solid #999;
+	font-size: 100%;
+	width: 20em;
+	}
+
+form.Formatted input,
+form.Formatted select {
+	padding: 2px;
+	margin-top: 0.15em;
+	margin-bottom: 0.15em;
+	}
+
+form.Formatted label {
+	background-repeat: no-repeat;
+	background-position: 0px 50%;
+	width: 5em;
+	display: inline-block;
+	padding-left: 22px;
+	}
+
+form.Formatted label.Wide {
+	width: auto;
+	padding-left: 0.2em;
+	}
+
+form.Formatted .Wide input,
+form.Formatted input.Wide {
+	width: 14em;
+	}
+
+form.Formatted .Wider label,
+form.Formatted label.Wider {
+	width: 5em;
+	padding-left: 0.2em;
+	}
+
+form.Formatted .Wider input,
+form.Formatted input.Wider {
+	width: 18em;
+	}
+
+form.Formatted .Wider input[type="submit"],
+form.Formatted input[type="submit"].Wider {
+	width: 18.5em;
+	}
+
+form.Formatted .Wide select,
+form.Formatted select.Wide {
+	width: 14.5em;
+	}
+
+form.Formatted .Right {
+	padding-top: 0;
+	}
+
+form.Formatted .Medium input,
+form.Formatted input.Medium {
+	width: 10em;
+	}
+
+form.Formatted .Narrow input,
+form.Formatted input.Narrow {
+	width: 3em;
+	}
+
+.Icon {
+	background-repeat: no-repeat;
+	background-position: 0px 50%;
+	padding-left: 20px;
+	margin-right: 14px;
+	}
+
+form.Formatted label.Icon {
+	margin-left: 20px;
+	margin-right: -20px;
+	}
+
+label.phone_number, .Icon.Phone { background-image: url(img/phone/mobile.png); }
+.Icon.Room { background-image: url(img/phone/mobile.png); }
+.IM.AIM, .Icon.AIM { background-image: url(img/im/aim.png); }
+.IM.GTalk, .Icon.GTalk { background-image: url(img/im/gtalk.png); }
+.IM.ICQ, .Icon.ICQ { background-image: url(img/im/icq.png); }
+.IM.MSN, .Icon.MSN { background-image: url(img/im/msn.png); }
+.IM.Skype, .Icon.Skype { background-image: url(img/im/skype.png); }
+
+div.Icon {
+	display: inline-block;
+	margin-bottom: 0.3em;
+}
+
+form.Formatted #phone_warning {
+	background-repeat: no-repeat;
+	background-position: 5px 50%;
+	background-image: url(img/warning.png);
+	padding-left: 47px;
+	background-color: #ffff99;
+	width: 16em;
+	font-size: 85%;
+	margin-top: 0.8em;
+	}
+
+form.Formatted #phone_warning div {
+	padding: 0.5em;
+	}
+
+form.Formatted .Blocks > div {
+	display: inline-block;
+	float: left;
+	padding-top: 0;
+	margin-top: 0;
+	margin-right: 2em;
+	}
+
+form.Formatted label {
+	cursor: pointer;
+	}
+
+
+
+#feedback {
+	position: fixed;
+	top: 0;
+	right: 0;
+	float: right;
+	width: 148px;
+	height: 64px;
+	}
+
+a.Delete {
+	text-decoration: none;
+	margin-right: 4px;
+	margin-left: 10px;
+	cursor: pointer;
+	}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+.Info {
+	font-size: 85%;
+	color: #ccc;
+	margin-top: 0.4em;
+	margin-left: 0.4em;
+	}
+
+.Hidden {
+	display: none;
+	}
+
+ul.Menu {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 80%;
+	}
+
+ul.Horizontal li {
+	display: block;
+	float: left;
+	padding: 0;
+	}
+
+ul.Horizontal li a {
+	display: block;
+	padding: 0.4em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	}
+
+ul.Horizontal {
+	display: inline-block;
+	}
+
+
+
+div.Container {
+	padding: 0;
+	margin: 0;
+	}
+div.Container div.Half,
+div.Container div.Third {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+	}
+
+div.Container div.Half{
+	width: 50%;
+	}
+div.Container div.Left.Half {
+	float: Left;
+	}
+div.Container div.Right.Half {
+	float: Right;
+	}
+
+div.Container div.Third{
+	width: 33%;
+	}
+div.Container div.Left.Third{
+	float: Left;
+	}
+div.Container div.Center.Third{
+	float: Left;
+	width: 34%;
+	}
+div.Container div.Right.Third{
+	float: Right;
+	}

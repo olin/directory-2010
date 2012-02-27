@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* Main page stylings (structure, menus, heading, footer) */
+
+html, body {
+	margin: 0;
+	padding: none;
+	width: 100%;
+	height: 100%;
+	background: #3f4449;
+	font-size: 11pt;
+}
+
+html, body, input, select, button {
+	color: #333;
+	font-family: "Quicksand", "Century Gothic", Verdana, Tahoma, Geneva, sans-serif;
+}
+
+input, select, button {
+	font-size: 10pt;
+}
+
+.Header.Section > #TopBar {
+	background: #2b455f;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		color-stop(0, #4c79a4),
+		color-stop(1, #2b455f)
+	);
+	background: -moz-linear-gradient(0% 0% -90deg, #4c79a4, #2b455f);
+}
+
+.Header.Section > #MenuBar {
+	margin: 0;
+	padding: 0;
+	background: #3f4449;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		color-stop(0.0, #2a333c),
+		color-stop(0.5, #3f4449)
+	);
+	background: -moz-linear-gradient(0% 0% -90deg, #2a333c, #3f4449);
+	border-bottom: 0.333em solid #356d93;
+}
+
+.Header.Section > .NoBorder#MenuBar {
+	border-bottom: none;
+}
+
+.Header.Section > #MenuBar.SubMenu {
+	background: #2a333c;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		color-stop(0.0, #282a33),
+		color-stop(0.5, #2a333c)
+	);
+	background: -moz-linear-gradient(0% 0% -90deg, #2a333c, #3f4449);
+}
+
+
+.Header.Section > #MenuBar > #HelpMenu {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border-left: 0.5em solid #2b455f;
+	margin-left: 1px;
+	padding-left: 1px;
+}
+
+.Header.Section > #MenuBar a {
+	display: inline-block;
+	margin: 1px;
+	margin-right: 0;
+	padding: 0.1em 0.5em;
+	background: #39566a;
+	color: #ccc;
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: background 0.75s, color 0.75s;
+	-moz-transition: background 0.75s, color 0.75s;
+	-o-transition: background 0.75s, color 0.75s;
+	transition: background 0.75s, color 0.75s;
+	text-transform: lowercase;
+}
+
+.Header.Section > #MenuBar a:hover,
+.Header.Section > #MenuBar a.Current {
+	color: white;
+	background: #356d93;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+
+.Header.Section > #MenuBar.NoBorder a {
+	margin-bottom: 0;
+}
+
+.Header.Section > #MenuBar > #HelpMenu > a {
+	background: #555;
+}
+
+.Header.Section > #MenuBar > #HelpMenu > a:hover,
+.Header.Section > #MenuBar > #HelpMenu > a.Current {
+	background: #777;
+}
+
+.Content.Section {
+	background: #fff;
+	padding: 1em;
+	font-size: 1em;
+	min-height: 220px;
+}
+label {
+	font-size: 0.9em;
+}
+
+.Content.Section h1:first-child,
+.Content.Section h2:first-child {
+	margin-top: 0;
+}
+
+.Footer {
+	background-color: #3f4449;
+	background: url(../img/footer-gradient.png) top left repeat-x;
+	min-height: 4em;
+	padding: 2em;
+	color: #999;
+	font-size: .8em;
+	margin: 0;
+}
+.Footer p {
+	margin-top: 0.2em;
+	margin-bottom: 0;
+}
+.Footer a {
+	color: #888;
+	text-decoration: none;
+	border-bottom: 1px dotted #999;
+	-webkit-transition: color 0.5s, border-bottom-color 0.5s;
+}
+.Footer a:hover {
+	color: #ccc;
+	border-bottom-color: #ccc;
+}
+
+
+a[href^="tel:"] {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.Sidebar {
+	display:inline;
+	background: whiteSmoke;
+	border:1px solid #aaa;
+	max-width:14em;
+	padding: 0;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+	padding-bottom: 0.25em;
+}
+
+.Right.Sidebar {
+	float: right;
+	margin-left: 1em;
+	margin-right: 2em;
+}
+
+.Left.Sidebar {
+	float: left;
+	margin-right: 1em;
+	margin-left: 2em;
+}
+
+.Sidebar h1,
+.Sidebar h2,
+.Sidebar h3,
+.Sidebar h4,
+.Sidebar h5 {
+	margin: 0;
+	margin-bottom: 0.125;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	padding: 0.5em;
+}
+
+.Sidebar a {
+	display: block;
+	font-size: 0.9em;
+	text-transform: lowercase;
+	padding: 0.25em;
+	padding-left: 0.5em;
+	border-radius: 0.2em;
+	text-decoration: none;
+	color: #48c;
+	border-top: 1px solid #dddddd;
+	margin-top: 1px;
+	-webkit-transition: background 0.5s linear;
+}
+
+.Sidebar a.SubMenu {
+	margin-left: 1em;
+	border-left: 0.3em solid #e8e8e8;
+	border-top-color: #e8e8e8;
+}
+
+.Sidebar a:hover {
+	background: #fff3cf;
+}
+
+.P { /* Parameter, dark red */
+	color: #aa0000;
+}
+
+.S { /* Sample/example, blue */
+	color: #548dd4;
+}
+
+.section {
+	border-top: 1px solid #e8e8e8;
+	margin-top: 1.667em;
+	padding-top: 0.5em;
+}
+
+.API.Subsection,
+.section > .section,
+.SampleTabGroup > .section {
+	margin-top: 0;
+	padding-top: 0;
+	margin-left: 1em;
+	padding-left: 0.5em;
+	padding-bottom: 0;
+	margin-bottom: 0.5em;
+	border: none;
+	border-left: 2px solid #ccc;
+	-moz-border-radius-topleft: 0.5em;
+	border-top-left-radius: 0.5em;
+	-moz-border-radius-bottomleft: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+
+.API.Subsection h3:first-child,
+.section h3:first-child,
+.API.Subsection h4:first-child,
+.section h4:first-child {
+	margin-top: 0.5em;
+}
+
+
+.API.Fields {
+	width: auto;
+	max-width: 100%;
+	margin-left: 0.5em;
+	font-size: 0.9em;
+}
+
+.API.Fields td strong {
+	font-family: 'Consolas', 'Lucida Console', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
+	display: block;
+	padding-right: 1em;
+}
+
+.API.Fields tr:first-child td {
+	border-top: 1px solid #ddd;
+}
+
+.API.Fields tr:hover {
+	background: #fff3cf;
+}
+
+.API.Fields td {
+	border-right: 1px solid #ddd;
+}
+
+.API.Fields td:first-child {
+	border-left: 1px solid #ddd;
+}
+
+.section.Current {
+	border: 0.25em solid #C9E1FF;
+	-moz-border-radius: 0.667em;
+	border-radius: 0.667em;
+	-moz-border-radius-topleft: 0;
+	border-top-left-radius: 0;
+	padding-top: 0;
+	max-width: 62em;
+}
+
+.section.Current > h3,
+.section.Current > h4 {
+	display: none;
+}
+
+.FormatMenu {
+	margin-left: 1em;
+}
+.FormatMenu div {
+	display: inline-block;
+	vertical-align: top;
+	text-transform: lowercase;
+	background: whiteSmoke;
+	border: 1px solid #e6e6e6;
+	padding: 0.15em 1em;
+	margin-right: 0.125em;
+	margin-bottom: 0.125em;
+	cursor: pointer;
+}
+
+.FormatMenu div:first-child {
+	-moz-border-radius-topleft: 0.5em;
+	border-top-left-radius: 0.5em;
+}
+.FormatMenu div:last-child {
+	-moz-border-radius-topright: 0.5em;
+	border-top-right-radius: 0.5em;
+}
+
+.FormatMenu div:hover {
+	background: #fff3cf;
+}
+.FormatMenu div.Current {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0.3em;
+	cursor: default;
+	background: #C9E1FF;
+	border-color: #C9E1FF;
+}
+.FormatMenu div.Current:hover {
+	background: #C9E1FF;
+}
+
+div.input.textarea textarea {
+	font-family: "Quicksand", "Century Gothic", Verdana, Tahoma, Geneva, sans-serif;
+	width: 25em;
+	height: 10em;
+}
+div.input.textarea label {
+	vertical-align: top;
+}
